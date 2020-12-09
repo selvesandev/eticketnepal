@@ -21,7 +21,3 @@ navigation.navigate('register',{id:2});
 #### Tab Navigator
 
 ### Drawer Navigation
-
-```
-
-```
