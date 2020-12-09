@@ -1,22 +1,9 @@
-export default {
-    primary: '#c71782',
-    secondary: '#ffcc00',
-    primary_active: '#8b005a',
-    dark: '#353354',
-    light: '#6c757d',
-    facebook: '#4266b2',
-    google: '#ea4336'
-}
 
-
-//$color-primary: #a80d5e;
-// $color - primary: #c71782;
-// $color - error: #FF4D50;
-// $color - secondary: #ffcc00;
-// $color - tertiary: #ffffff;
-// $color - primary - active: #8b005a;
-// $color - primary - light: #ce73aa;
-// $color - dark: #353354;
-// $color - light: #6c757d;
-// $textColorDark: #525351;
-// $textColorLight: #bfbebd;
+export const PRIMARY = '#c71782';
+export const SECONDARY = '#ffcc00';
+export const PRIMARY_ACTIVE = '#8b005a';
+export const DARK = '#353354';
+export const GRAY = '#6c757d';
+export const DIMLIGHT = '#E5E5E5';
+export const FACEBOOK = '#4266b2';
+export const GOOGLE = '#ea4336';
