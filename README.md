@@ -10,14 +10,35 @@
 
 [REAT NAVIGATION](https://reactnavigation.org/docs/getting-started)
 
-#### Stack Navigator
+#### Navigating Between Screens
 
-Passing Parameters
+```react
+const component=({navigation})=>{}
+```
 
 ```react
 navigation.navigate('register',{id:2});
 ```
 
-#### Tab Navigator
+Or
 
-### Drawer Navigation
+```react
+import { useNavigation } from '@react-navigation/native';
+navigation.navigate('register');
+```
+
+```react
+navigation.navigate('register',{id:2});
+```
+
+### Touchables
+
+```react
+<Text onPress={()=>{}}></Text>
+```
+
+```react
+import {TouchableWithoutFeedback,TouchableOpacity,TouchableHighlight} from 'react-native';
+```
+
+**NOTE** All the touchables will accept `onPress` prop.

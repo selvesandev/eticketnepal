@@ -7,4 +7,11 @@ const VerticalSpacing = ({ height }) => {
 }
 
 
-export { VerticalSpacing };
+const HorizontalSpacing = ({ width }) => {
+    return (
+        <View style={{ width }} />
+    )
+}
+
+
+export { VerticalSpacing, HorizontalSpacing };

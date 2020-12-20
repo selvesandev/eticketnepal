@@ -30,6 +30,38 @@ export const AuthInputField = ({ value, placeholder, keyboardType, icon, isPassw
 }
 
 
+export const AppSearchField = ({ value, placeholder, keyboardType, icon, onChangeText, height = 50 }) => {
+    return <View style={{}}>
+        <AntDesign
+            size={18}
+            color={(PRIMARY)}
+            name={icon || 'search1'}
+            style={{
+                position: 'absolute',
+                top: 11,
+                zIndex: 2,
+                paddingLeft: 12
+            }} />
+        <TextInput
+            keyboardType={keyboardType}
+            onFocus={() => {
+            }}
+            value={value}
+            onChangeText={onChangeText}
+            onBlur={() => {
+            }}
+            fontWeight="bold"
+            placeholder={placeholder || 'Search'}
+            style={{
+                height: height,
+                paddingLeft: 40,
+                backgroundColor: 'rgb(247,247,247)',
+                borderRadius: 20
+            }} />
+    </View>
+}
+
+
 export const AppButton = ({ onClick, label, disabled, loading = false }) => {
     return <View style={{ backgroundColor: (loading || disabled ? DIMLIGHT : PRIMARY), textAlign: 'center', paddingTop: 10, paddingBottom: 10 }}>
         <TouchableOpacity disabled={disabled || loading} onPress={onClick}>
@@ -46,11 +78,7 @@ export const AppCheckBoxField = ({ disabled = false, value, onChange, children }
     const [isChecked, updateIsChecked] = useState(false)
 
     return <View style={{ display: 'flex', flexDirection: 'row' }}>
-
-        {/* style={{ height: 20, width: 20 }} */}
-
         <CheckBox
-
             disabled={disabled}
             value={isChecked}
             onFillColor={PRIMARY}
